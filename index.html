@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANICAST — Em breve</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #1a1033, #3b1d6e 55%, #6a2c91);
+    }
+    h1 {
+      font-size: clamp(2.5rem, 10vw, 5rem);
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: clamp(1rem, 3.5vw, 1.5rem);
+      opacity: 0.9;
+    }
+    .pulse {
+      display: inline-block;
+      margin-top: 2rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ff7ad9;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.8); opacity: 0.4; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ANICAST</h1>
+    <p>Iniciaremos nossas atividades em breve: aguardem</p>
+    <span class="pulse"></span>
+  </main>
+</body>
+</html>
